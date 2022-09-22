@@ -14,9 +14,6 @@ services:
             - 9229:9229
         networks:
             - lforms_network
-        volumes:
-            - .:/usr/src/app
-            - /usr/src/app/node_modules
         restart: unless-stopped
         environment:
             - PORT=3000
@@ -33,9 +30,6 @@ services:
             - 9230:9229
         networks:
             - lforms_network
-        volumes:
-            - .:/usr/src/app
-            - /usr/src/app/node_modules
         restart: unless-stopped
         environment:
             - PORT=8000
